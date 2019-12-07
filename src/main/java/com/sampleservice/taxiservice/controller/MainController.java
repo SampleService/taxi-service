@@ -23,7 +23,7 @@ public class MainController extends MObject {
         result.set("msg", "/car");
 
         if (requestData.get("interval") != null) {
-            MBaseUtils.generateStringInKBSize(200, result, (int) requestData.get("interval"));
+            MBaseUtils.generateStringInKBSize(200, result, (long) requestData.get("interval"));
         }
         return result;
     }
